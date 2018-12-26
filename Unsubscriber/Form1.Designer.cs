@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Unsubscriber));
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.Container = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.keyStore = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.button1 = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@
             this.GmailEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
-            this.bunifuGradientPanel1.SuspendLayout();
+            this.Container.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -91,41 +91,41 @@
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(617, 275);
             this.bunifuCustomDataGrid1.TabIndex = 0;
             // 
-            // bunifuGradientPanel1
+            // Container
             // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.flowLayoutPanel1);
-            this.bunifuGradientPanel1.Controls.Add(this.button1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel10);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel9);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel8);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox3);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel3);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox4);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel4);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox2);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel7);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel5);
-            this.bunifuGradientPanel1.Controls.Add(this.KeyWords);
-            this.bunifuGradientPanel1.Controls.Add(this.ShowPass);
-            this.bunifuGradientPanel1.Controls.Add(this.GmailPass);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel6);
-            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
-            this.bunifuGradientPanel1.Controls.Add(this.GmailEmail);
-            this.bunifuGradientPanel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(90, 50);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(450, 838);
-            this.bunifuGradientPanel1.TabIndex = 1;
+            this.Container.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Container.BackgroundImage")));
+            this.Container.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Container.Controls.Add(this.flowLayoutPanel1);
+            this.Container.Controls.Add(this.button1);
+            this.Container.Controls.Add(this.bunifuCustomLabel10);
+            this.Container.Controls.Add(this.bunifuCustomLabel9);
+            this.Container.Controls.Add(this.bunifuCustomLabel8);
+            this.Container.Controls.Add(this.bunifuCheckbox3);
+            this.Container.Controls.Add(this.bunifuCustomLabel3);
+            this.Container.Controls.Add(this.bunifuCheckbox4);
+            this.Container.Controls.Add(this.bunifuCustomLabel4);
+            this.Container.Controls.Add(this.bunifuCheckbox2);
+            this.Container.Controls.Add(this.bunifuCustomLabel2);
+            this.Container.Controls.Add(this.bunifuCheckbox1);
+            this.Container.Controls.Add(this.bunifuCustomLabel1);
+            this.Container.Controls.Add(this.bunifuCustomLabel7);
+            this.Container.Controls.Add(this.bunifuCustomLabel5);
+            this.Container.Controls.Add(this.KeyWords);
+            this.Container.Controls.Add(this.ShowPass);
+            this.Container.Controls.Add(this.GmailPass);
+            this.Container.Controls.Add(this.bunifuCustomLabel6);
+            this.Container.Controls.Add(this.pictureBox1);
+            this.Container.Controls.Add(this.GmailEmail);
+            this.Container.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Container.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.Container.GradientBottomRight = System.Drawing.Color.White;
+            this.Container.GradientTopLeft = System.Drawing.Color.White;
+            this.Container.GradientTopRight = System.Drawing.Color.White;
+            this.Container.Location = new System.Drawing.Point(90, 50);
+            this.Container.Name = "Container";
+            this.Container.Quality = 10;
+            this.Container.Size = new System.Drawing.Size(450, 838);
+            this.Container.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
@@ -436,7 +436,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(634, 711);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.Controls.Add(this.Container);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -444,10 +444,11 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Unsubscriber";
-            this.Text = "Mail Unsubscriber";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Unsubscriber";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
+            this.Container.ResumeLayout(false);
+            this.Container.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowPass)).EndInit();
@@ -459,7 +460,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.Framework.UI.BunifuGradientPanel Container;
         private Bunifu.Framework.UI.BunifuMaterialTextbox GmailEmail;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private System.Windows.Forms.PictureBox pictureBox1;
