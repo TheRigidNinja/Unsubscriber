@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -48,7 +49,7 @@ namespace Unsubscriber
                 GmailPass.Text = "";
                 GmailPass.ForeColor = Color.FromArgb(64, 64, 64); ;
                 GmailPass.isPassword = true;
-                ShowPass.Image = Properties.Resources.hide__1_;
+                passShow.Image = Properties.Resources.hide__1_;
             }
            
         }
@@ -60,7 +61,7 @@ namespace Unsubscriber
                 GmailPass.Text = "Password";
                 GmailPass.ForeColor = Color.Gray;
                 GmailPass.isPassword = false;
-                ShowPass.Image = Properties.Resources.view__1_;
+                passShow.Image = Properties.Resources.view__1_;
             }
         }
 
@@ -83,19 +84,19 @@ namespace Unsubscriber
         }
 
         Boolean showpass = false;
-        private void ShowPass_Click(object sender, EventArgs e)
+        private void passShow_Click(object sender, EventArgs e)
         {
             if (GmailPass.Text != "Password" || GmailPass.Text != "")
             {
                 if (showpass == true)
                 {
-                    ShowPass.Image = Properties.Resources.hide__1_;
+                    passShow.Image = Properties.Resources.hide__1_;
                     showpass = false;
                     GmailPass.isPassword = true;
                 }
                 else
                 {
-                    ShowPass.Image = Properties.Resources.view__1_;
+                    passShow.Image = Properties.Resources.view__1_;
                     showpass = true;
                     GmailPass.isPassword = false;
                 }
@@ -178,6 +179,56 @@ namespace Unsubscriber
         }
 
         private void GmailPass_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string userData = "{\"Email\":\""+ GmailEmail.Text + "\""+ ",\"Password\":\"" + GmailPass.Text + "\"" + ",\"Workplace\":{\"Inbox\":\"" + inboxBTN.Checked + "\"" +
+                ",\"Spam\":\"" + spamBTN.Checked+ "\"" + ",\"Block\":\"" + blockBTN.Checked+ "\"" + ",\"Delete\":\"" + deleteBTN.Checked+ "\"" +
+                ",\"KeyTags\":\"" + keyStore.Text+ "\"" + "}}";
+
+
+            System.IO.StreamWriter file = new System.IO.StreamWriter(@"userData.json");
+            file.Write(userData);
+            file.Close();
+
+            Container.Height = 600;
+            Unsubscribe.Visible = false;
+            keyTagField.Visible = false;
+            KeyWords.Visible = false;
+            bunifuCustomLabel9.Visible = false;
+            bunifuCustomLabel8.Visible = false;
+            bunifuCustomLabel2.Visible = false;
+            deleteBTN.Visible = false;
+            bunifuCustomLabel10.Visible = false;
+            bunifuCustomLabel1.Visible = false;
+            blockBTN.Visible = false;
+            bunifuCustomLabel7.Visible = false;
+            spamBTN.Visible = false;
+            bunifuCustomLabel3.Visible = false;
+            bunifuCustomLabel4.Visible = false;
+            inboxBTN.Visible = false;
+            bunifuCustomLabel5.Visible = false;
+            passShow.Visible = false;
+            GmailPass.Visible = false;
+            GmailEmail.Visible = false;
+            pictureBox1.Height = 181;
+            pictureBox1.Width = 183;
+            pictureBox1.Image = Properties.Resources.loader;
+            pictureBox1.Left = 142;
+            pictureBox1.Top = 117;
+            bunifuCustomLabel6.Font = new Font("Roboto", 14);
+            bunifuCustomLabel6.Left = 170;
+            bunifuCustomLabel6.Top = 300;
+            bunifuProgressBar1.Visible = true;
+
+        }
+
+        private void Container_Paint(object sender, PaintEventArgs e)
         {
 
         }

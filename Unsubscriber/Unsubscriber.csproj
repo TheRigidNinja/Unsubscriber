@@ -91,5 +91,17 @@
   <ItemGroup>
     <None Include="Resources\view %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_username_login_1172579.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loader.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

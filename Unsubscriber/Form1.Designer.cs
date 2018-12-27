@@ -32,35 +32,36 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Unsubscriber));
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Container = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.passShow = new System.Windows.Forms.PictureBox();
+            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.keyTagField = new System.Windows.Forms.FlowLayoutPanel();
+            this.keyStore = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Unsubscribe = new System.Windows.Forms.Button();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox3 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.spamBTN = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox4 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.inboxBTN = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.deleteBTN = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.blockBTN = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.KeyWords = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.ShowPass = new System.Windows.Forms.PictureBox();
             this.GmailPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GmailEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.keyStore = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
-            this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPass)).BeginInit();
+            this.Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.passShow)).BeginInit();
+            this.keyTagField.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuCustomDataGrid1
@@ -88,44 +89,118 @@
             this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(617, 275);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(634, 275);
             this.bunifuCustomDataGrid1.TabIndex = 0;
             // 
-            // bunifuGradientPanel1
+            // groupBox1
             // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.flowLayoutPanel1);
-            this.bunifuGradientPanel1.Controls.Add(this.button1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel10);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel9);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel8);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox3);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel3);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox4);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel4);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox2);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel7);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel5);
-            this.bunifuGradientPanel1.Controls.Add(this.KeyWords);
-            this.bunifuGradientPanel1.Controls.Add(this.ShowPass);
-            this.bunifuGradientPanel1.Controls.Add(this.GmailPass);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel6);
-            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
-            this.bunifuGradientPanel1.Controls.Add(this.GmailEmail);
-            this.bunifuGradientPanel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(90, 50);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(450, 838);
-            this.bunifuGradientPanel1.TabIndex = 1;
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.Location = new System.Drawing.Point(0, 888);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(634, 28);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            // 
+            // Container
+            // 
+            this.Container.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Container.BackgroundImage")));
+            this.Container.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Container.Controls.Add(this.pictureBox1);
+            this.Container.Controls.Add(this.passShow);
+            this.Container.Controls.Add(this.bunifuProgressBar1);
+            this.Container.Controls.Add(this.keyTagField);
+            this.Container.Controls.Add(this.Unsubscribe);
+            this.Container.Controls.Add(this.bunifuCustomLabel10);
+            this.Container.Controls.Add(this.bunifuCustomLabel9);
+            this.Container.Controls.Add(this.bunifuCustomLabel8);
+            this.Container.Controls.Add(this.spamBTN);
+            this.Container.Controls.Add(this.bunifuCustomLabel3);
+            this.Container.Controls.Add(this.inboxBTN);
+            this.Container.Controls.Add(this.bunifuCustomLabel4);
+            this.Container.Controls.Add(this.deleteBTN);
+            this.Container.Controls.Add(this.bunifuCustomLabel2);
+            this.Container.Controls.Add(this.blockBTN);
+            this.Container.Controls.Add(this.bunifuCustomLabel1);
+            this.Container.Controls.Add(this.bunifuCustomLabel7);
+            this.Container.Controls.Add(this.bunifuCustomLabel5);
+            this.Container.Controls.Add(this.KeyWords);
+            this.Container.Controls.Add(this.GmailPass);
+            this.Container.Controls.Add(this.bunifuCustomLabel6);
+            this.Container.Controls.Add(this.GmailEmail);
+            this.Container.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Container.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
+            this.Container.GradientBottomRight = System.Drawing.Color.White;
+            this.Container.GradientTopLeft = System.Drawing.Color.White;
+            this.Container.GradientTopRight = System.Drawing.Color.White;
+            this.Container.Location = new System.Drawing.Point(90, 50);
+            this.Container.Name = "Container";
+            this.Container.Quality = 10;
+            this.Container.Size = new System.Drawing.Size(450, 838);
+            this.Container.TabIndex = 1;
+            this.Container.Paint += new System.Windows.Forms.PaintEventHandler(this.Container_Paint);
+            // 
+            // passShow
+            // 
+            this.passShow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.passShow.Image = global::Unsubscriber.Properties.Resources.view__1_;
+            this.passShow.Location = new System.Drawing.Point(344, 224);
+            this.passShow.Name = "passShow";
+            this.passShow.Size = new System.Drawing.Size(53, 37);
+            this.passShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.passShow.TabIndex = 40;
+            this.passShow.TabStop = false;
+            this.passShow.Click += new System.EventHandler(this.passShow_Click);
+            // 
+            // bunifuProgressBar1
+            // 
+            this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
+            this.bunifuProgressBar1.BorderRadius = 3;
+            this.bunifuProgressBar1.Location = new System.Drawing.Point(-9, 0);
+            this.bunifuProgressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuProgressBar1.MaximumValue = 100;
+            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
+            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuProgressBar1.Size = new System.Drawing.Size(464, 19);
+            this.bunifuProgressBar1.TabIndex = 39;
+            this.bunifuProgressBar1.Value = 61;
+            this.bunifuProgressBar1.Visible = false;
+            // 
+            // keyTagField
+            // 
+            this.keyTagField.AutoScroll = true;
+            this.keyTagField.BackColor = System.Drawing.Color.Transparent;
+            this.keyTagField.Controls.Add(this.keyStore);
+            this.keyTagField.Location = new System.Drawing.Point(56, 660);
+            this.keyTagField.Name = "keyTagField";
+            this.keyTagField.Size = new System.Drawing.Size(350, 100);
+            this.keyTagField.TabIndex = 38;
+            // 
+            // keyStore
+            // 
+            this.keyStore.AutoSize = true;
+            this.keyStore.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.keyStore.Location = new System.Drawing.Point(3, 0);
+            this.keyStore.MaximumSize = new System.Drawing.Size(330, 0);
+            this.keyStore.Name = "keyStore";
+            this.keyStore.Size = new System.Drawing.Size(0, 18);
+            this.keyStore.TabIndex = 36;
+            // 
+            // Unsubscribe
+            // 
+            this.Unsubscribe.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Unsubscribe.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Unsubscribe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Unsubscribe.BackgroundImage")));
+            this.Unsubscribe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Unsubscribe.CausesValidation = false;
+            this.Unsubscribe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Unsubscribe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Unsubscribe.Location = new System.Drawing.Point(137, 780);
+            this.Unsubscribe.Name = "Unsubscribe";
+            this.Unsubscribe.Size = new System.Drawing.Size(174, 43);
+            this.Unsubscribe.TabIndex = 35;
+            this.Unsubscribe.Text = "UNSUBSCRIBE";
+            this.Unsubscribe.UseVisualStyleBackColor = false;
+            this.Unsubscribe.Click += new System.EventHandler(this.button1_Click);
             // 
             // bunifuCustomLabel10
             // 
@@ -157,19 +232,19 @@
             this.bunifuCustomLabel8.TabIndex = 31;
             this.bunifuCustomLabel8.Text = "Things that should not be affected!! ";
             // 
-            // bunifuCheckbox3
+            // spamBTN
             // 
-            this.bunifuCheckbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox3.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox3.Checked = true;
-            this.bunifuCheckbox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuCheckbox3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox3.Location = new System.Drawing.Point(62, 384);
-            this.bunifuCheckbox3.Margin = new System.Windows.Forms.Padding(14, 21, 14, 21);
-            this.bunifuCheckbox3.Name = "bunifuCheckbox3";
-            this.bunifuCheckbox3.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox3.TabIndex = 29;
+            this.spamBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.spamBTN.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.spamBTN.Checked = true;
+            this.spamBTN.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.spamBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.spamBTN.ForeColor = System.Drawing.Color.White;
+            this.spamBTN.Location = new System.Drawing.Point(62, 384);
+            this.spamBTN.Margin = new System.Windows.Forms.Padding(14, 21, 14, 21);
+            this.spamBTN.Name = "spamBTN";
+            this.spamBTN.Size = new System.Drawing.Size(20, 20);
+            this.spamBTN.TabIndex = 29;
             // 
             // bunifuCustomLabel3
             // 
@@ -181,19 +256,19 @@
             this.bunifuCustomLabel3.TabIndex = 30;
             this.bunifuCustomLabel3.Text = "SPAM";
             // 
-            // bunifuCheckbox4
+            // inboxBTN
             // 
-            this.bunifuCheckbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox4.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox4.Checked = false;
-            this.bunifuCheckbox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuCheckbox4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox4.Location = new System.Drawing.Point(62, 354);
-            this.bunifuCheckbox4.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
-            this.bunifuCheckbox4.Name = "bunifuCheckbox4";
-            this.bunifuCheckbox4.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox4.TabIndex = 27;
+            this.inboxBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.inboxBTN.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.inboxBTN.Checked = false;
+            this.inboxBTN.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.inboxBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.inboxBTN.ForeColor = System.Drawing.Color.White;
+            this.inboxBTN.Location = new System.Drawing.Point(62, 354);
+            this.inboxBTN.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
+            this.inboxBTN.Name = "inboxBTN";
+            this.inboxBTN.Size = new System.Drawing.Size(20, 20);
+            this.inboxBTN.TabIndex = 27;
             // 
             // bunifuCustomLabel4
             // 
@@ -205,19 +280,19 @@
             this.bunifuCustomLabel4.TabIndex = 28;
             this.bunifuCustomLabel4.Text = "INBOX";
             // 
-            // bunifuCheckbox2
+            // deleteBTN
             // 
-            this.bunifuCheckbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox2.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox2.Checked = false;
-            this.bunifuCheckbox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuCheckbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox2.Location = new System.Drawing.Point(62, 523);
-            this.bunifuCheckbox2.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
-            this.bunifuCheckbox2.Name = "bunifuCheckbox2";
-            this.bunifuCheckbox2.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox2.TabIndex = 25;
+            this.deleteBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.deleteBTN.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.deleteBTN.Checked = false;
+            this.deleteBTN.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.deleteBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteBTN.ForeColor = System.Drawing.Color.White;
+            this.deleteBTN.Location = new System.Drawing.Point(62, 523);
+            this.deleteBTN.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
+            this.deleteBTN.Name = "deleteBTN";
+            this.deleteBTN.Size = new System.Drawing.Size(20, 20);
+            this.deleteBTN.TabIndex = 25;
             // 
             // bunifuCustomLabel2
             // 
@@ -229,19 +304,19 @@
             this.bunifuCustomLabel2.TabIndex = 26;
             this.bunifuCustomLabel2.Text = "DELETE";
             // 
-            // bunifuCheckbox1
+            // blockBTN
             // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.Checked = false;
-            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(62, 457);
-            this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.bunifuCheckbox1.Name = "bunifuCheckbox1";
-            this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox1.TabIndex = 23;
+            this.blockBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.blockBTN.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.blockBTN.Checked = false;
+            this.blockBTN.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.blockBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.blockBTN.ForeColor = System.Drawing.Color.White;
+            this.blockBTN.Location = new System.Drawing.Point(62, 457);
+            this.blockBTN.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.blockBTN.Name = "blockBTN";
+            this.blockBTN.Size = new System.Drawing.Size(20, 20);
+            this.blockBTN.TabIndex = 23;
             // 
             // bunifuCustomLabel1
             // 
@@ -298,21 +373,6 @@
             this.KeyWords.Enter += new System.EventHandler(this.KeyWords_Enter);
             this.KeyWords.Leave += new System.EventHandler(this.KeyWords_Leave);
             // 
-            // ShowPass
-            // 
-            this.ShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ShowPass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ShowPass.ErrorImage = null;
-            this.ShowPass.Image = ((System.Drawing.Image)(resources.GetObject("ShowPass.Image")));
-            this.ShowPass.InitialImage = null;
-            this.ShowPass.Location = new System.Drawing.Point(346, 224);
-            this.ShowPass.Name = "ShowPass";
-            this.ShowPass.Size = new System.Drawing.Size(51, 36);
-            this.ShowPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ShowPass.TabIndex = 18;
-            this.ShowPass.TabStop = false;
-            this.ShowPass.Click += new System.EventHandler(this.ShowPass_Click);
-            // 
             // GmailPass
             // 
             this.GmailPass.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -341,8 +401,9 @@
             // 
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(183, 130);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(177, 134);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(105, 21);
             this.bunifuCustomLabel6.TabIndex = 15;
@@ -353,8 +414,8 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(183, 27);
+            this.pictureBox1.Image = global::Unsubscriber.Properties.Resources.iconner;
+            this.pictureBox1.Location = new System.Drawing.Point(177, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(101, 103);
             this.pictureBox1.TabIndex = 14;
@@ -383,60 +444,15 @@
             this.GmailEmail.Enter += new System.EventHandler(this.GmailEmail_Enter);
             this.GmailEmail.Leave += new System.EventHandler(this.GmailEmail_Leave);
             // 
-            // button1
-            // 
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.CausesValidation = false;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(135, 777);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 43);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "UNSUBSCRIBE";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 888);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(617, 28);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            // 
-            // keyStore
-            // 
-            this.keyStore.AutoSize = true;
-            this.keyStore.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.keyStore.Location = new System.Drawing.Point(3, 0);
-            this.keyStore.MaximumSize = new System.Drawing.Size(330, 0);
-            this.keyStore.Name = "keyStore";
-            this.keyStore.Size = new System.Drawing.Size(0, 18);
-            this.keyStore.TabIndex = 36;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.keyStore);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(56, 660);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(350, 100);
-            this.flowLayoutPanel1.TabIndex = 38;
-            // 
             // Unsubscriber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(225)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(634, 711);
+            this.ClientSize = new System.Drawing.Size(651, 711);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.Controls.Add(this.Container);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -444,14 +460,15 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Unsubscriber";
-            this.Text = "Mail Unsubscriber";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Unsubscriber";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPass)).EndInit();
+            this.Container.ResumeLayout(false);
+            this.Container.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.passShow)).EndInit();
+            this.keyTagField.ResumeLayout(false);
+            this.keyTagField.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -459,30 +476,31 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.Framework.UI.BunifuGradientPanel Container;
         private Bunifu.Framework.UI.BunifuMaterialTextbox GmailEmail;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox GmailPass;
-        private System.Windows.Forms.PictureBox ShowPass;
         private Bunifu.Framework.UI.BunifuMaterialTextbox KeyWords;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox3;
+        private Bunifu.Framework.UI.BunifuCheckbox spamBTN;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox4;
+        private Bunifu.Framework.UI.BunifuCheckbox inboxBTN;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox2;
+        private Bunifu.Framework.UI.BunifuCheckbox deleteBTN;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
+        private Bunifu.Framework.UI.BunifuCheckbox blockBTN;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Unsubscribe;
         private System.Windows.Forms.GroupBox groupBox1;
         private Bunifu.Framework.UI.BunifuCustomLabel keyStore;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel keyTagField;
+        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
+        private System.Windows.Forms.PictureBox passShow;
     }
 }
 
