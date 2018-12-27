@@ -188,7 +188,7 @@ namespace Unsubscriber
         private void button1_Click(object sender, EventArgs e)
         {
             string userData = "{\"Email\":\""+ GmailEmail.Text + "\""+ ",\"Password\":\"" + GmailPass.Text + "\"" + ",\"Workplace\":{\"Inbox\":\"" + inboxBTN.Checked + "\"" +
-                ",\"Spam\":\"" + spamBTN.Checked+ "\"" + ",\"Block\":\"" + blockBTN.Checked+ "\"" + ",\"Delete\":\"" + deleteBTN.Checked+ "\"" +
+                ",\"Spam\":\"" + spamBTN.Checked+ "\""+",\"All_Mail\":\"" + allmailBTN.Checked + "\"" + ",\"Block\":\"" + blockBTN.Checked+ "\"" + ",\"Delete\":\"" + deleteBTN.Checked+ "\"" +
                 ",\"KeyTags\":\"" + keyStore.Text+ "\"" + "}}";
 
 
@@ -215,6 +215,8 @@ namespace Unsubscriber
             bunifuCustomLabel5.Visible = false;
             passShow.Visible = false;
             GmailPass.Visible = false;
+            allmailBTN.Visible = false;
+            bunifuCustomLabel11.Visible = false;
             GmailEmail.Visible = false;
             pictureBox1.Height = 181;
             pictureBox1.Width = 183;
