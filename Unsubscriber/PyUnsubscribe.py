@@ -52,7 +52,7 @@ import math
      memdc.BitBlt((0, 0), (width, height), srcdc, (left, top), win32con.SRCCOPY)
      bmp.SaveBitmapFile(memdc, 'TruckPoints/Main.jpeg');
 
-     # Gey the image ------------------------------##
+     # GreyScale the image ------------------------------##
      if GrayScale == True:
          image = cv2.imread('TruckPoints/Main.jpeg')
          gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
